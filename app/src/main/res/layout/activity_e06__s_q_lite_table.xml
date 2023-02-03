@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Episodes.E06_SQLiteTable">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableLayout
+                android:id="@+id/table"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp">
+
+
+                <TableRow >
+
+                    <TextView
+                        android:id="@+id/ProductID"
+                        style="@style/E06_Table"
+                        android:text="@string/ProductID"/>
+
+                    <TextView
+                        android:id="@+id/ProductName"
+                        style="@style/E06_Table"
+                        android:text="@string/ProductName"/>
+
+                    <TextView
+                        android:id="@+id/SupplierID"
+                        style="@style/E06_Table"
+                        android:text="@string/SupplierID"/>
+
+                    <TextView
+                        android:id="@+id/CategoryID"
+                        style="@style/E06_Table"
+                        android:text="@string/CategoryID"/>
+
+                    <TextView
+                        android:id="@+id/Unit"
+                        style="@style/E06_Table"
+                        android:text="@string/Unit"/>
+
+                    <TextView
+                        android:id="@+id/Price"
+                        style="@style/E06_Table"
+                        android:text="@string/Price"/>
+
+                </TableRow>
+
+
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/separator"/>
+
+            </TableLayout>
+
+        </HorizontalScrollView>
+
+
+
+    </ScrollView>
+
+
+
+</TableLayout>

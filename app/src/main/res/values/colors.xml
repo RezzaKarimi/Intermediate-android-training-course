@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--E01-->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="white">#f1f1f1</color>
+    <!--E01-->
+    <!--E02-->
+    <color name="white_low_transparency">#58B1A5A5</color>
+    <!--E02-->
+
+    <!--E04-->
+    <color name="black">#212121</color>
+    <color name="separator">#58423F3F</color>
+    <color name="alertDialog">@color/design_default_color_error</color>
+    <color name="panel_background">#E5DDD5</color>
+    <color name="multiSelected">#58232121</color>
+
+    <!--E04-->
+
+</resources>

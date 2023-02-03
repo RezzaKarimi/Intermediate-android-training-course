@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/separator">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/setting"
+                android:textSize="20sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/back"
+                style="@style/E04_SQLite"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_24"
+                android:layout_alignParentLeft="true" />
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/separator"
+            android:layout_below="@+id/appBar"
+            android:layout_margin="16dp"
+            android:layout_centerInParent="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/font_cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:id="@+id/parent"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:background="@color/white">
+
+
+                        <androidx.appcompat.widget.AppCompatSpinner
+                            android:id="@+id/font_spinner"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:entries="@array/font_spinner"
+                            android:padding="15dp"/>
+
+                        <TextView
+                            android:id="@+id/fontSize_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fontSize"
+                            android:padding="15dp"
+                            android:textSize="16sp"/>
+
+                        <androidx.appcompat.widget.AppCompatSeekBar
+                            android:id="@+id/fontSize_seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:max="30"/>
+
+                        <TextView
+                            android:id="@+id/fontSpacing_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/fontSpacing"
+                            android:padding="15dp"
+                            android:textSize="16sp"/>
+
+                        <androidx.appcompat.widget.AppCompatSeekBar
+                            android:id="@+id/fontSpacing_seekBar"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="15dp"
+                            android:max="100"/>
+
+                        <TextView
+                            android:id="@+id/sampleText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/lipsom"
+                            android:maxLines="2"
+                            android:padding="15dp"/>
+
+
+                        <com.skydoves.colorpickerview.ColorPickerView
+                            android:id="@+id/colorPickerView"
+                            android:layout_width="180dp"
+                            android:layout_height="180dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            android:padding="15dp"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/customColor_CheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/customColorCheckBox"/>
+
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/darkMode_CheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/darkModeCheckBox"
+                            android:layout_weight="0.3"/>
+
+                        <androidx.appcompat.widget.AppCompatCheckBox
+                            android:id="@+id/autoBack_CheckBox"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/autoBackCheckBox"
+                            android:layout_weight="0.3"/>
+
+
+                        <TextView
+                            android:id="@+id/clearData"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/colorPickerView"
+                            android:textColor="@color/alertDialog"
+                            android:text="@string/clearData"
+                            android:padding="15dp"/>
+
+                    </LinearLayout>
+
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+
+
+
+        </ScrollView>
+
+
+</RelativeLayout>

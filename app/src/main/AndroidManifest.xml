@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.season6">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".app.Application"
+        android:allowBackup="true"
+        android:icon="@mipmap/pocmon"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/pocmon"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Episodes.E10_SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Episodes.E09_FinalActivity"/>
+        <activity android:name=".Episodes.E08_SQLiteUnion" />
+        <activity android:name=".Episodes.E07_SQLiteProducts" />
+        <activity android:name=".Episodes.E07_SQLiteOrders" />
+        <activity android:name=".Episodes.E07_SQLite" />
+        <activity android:name=".Episodes.E06_SQLiteTable" />
+        <activity android:name=".Episodes.E05_SQLite" />
+        <activity
+            android:name=".Episodes.E04_SQLiteSetting"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Episodes.E04_SQLiteSingleNote"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Episodes.E04_SQLiteSavePage"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Episodes.E04_SQLite"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Episodes.E02_CustomSharedPreferences"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Episodes.E01_SharePreferences"
+            android:theme="@style/AppTheme.NoActionBar" />
+    </application>
+
+</manifest>

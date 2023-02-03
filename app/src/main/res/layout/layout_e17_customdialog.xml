@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/panel_background">
+
+    <View
+        android:id="@+id/color"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/alertDialog"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="?selectableItemBackgroundBorderless">
+
+
+            <ImageView
+                android:id="@+id/titleIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                app:srcCompat="@drawable/ic_baseline_check_24"/>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:text="@string/signUp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:gravity="right|center_vertical"
+                android:layout_toLeftOf="@id/titleIcon"
+                android:layout_marginRight="8dp"/>
+
+
+            <View
+                android:id="@+id/separator"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/separator"
+                android:layout_below="@id/title"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+
+        <TextView
+            android:id="@+id/message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minLines="5"
+            android:layout_below="@id/separator"
+            android:gravity="right"
+            android:text="@string/signUp"/>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/message"
+            android:hint="Input"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/input">
+
+            <LinearLayout
+                android:id="@+id/negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_below="@id/message"
+                android:layout_toLeftOf="@id/positive"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorAccent"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/negativeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Negative"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center"/>
+
+
+                <ImageView
+                    android:id="@+id/negativeIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@color/colorPrimary"
+                android:padding="4dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/positiveText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="24dp"
+                    android:text="Positive"
+                    android:layout_marginRight="4dp"
+                    android:gravity="center"/>
+
+
+                <ImageView
+                    android:id="@+id/positiveIcon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/neutral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/input"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorAccent"
+            android:padding="4dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/neutralText"
+                android:layout_width="wrap_content"
+                android:layout_height="24dp"
+                android:text="Neutral"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"/>
+
+
+            <ImageView
+                android:id="@+id/neutralIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

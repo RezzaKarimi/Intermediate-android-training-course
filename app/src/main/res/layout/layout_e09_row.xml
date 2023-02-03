@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp"
+    android:id="@+id/parent"
+    android:background="?android:selectableItemBackground">
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:text="1"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:background="@drawable/e04_background"/>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_toRightOf="@+id/number"
+        android:text="E04_SQLite"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="8dp"/>
+
+
+</RelativeLayout>

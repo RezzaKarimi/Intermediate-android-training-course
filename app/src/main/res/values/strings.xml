@@ -1,0 +1,73 @@
+<resources>
+    <!-- E01 -->
+    <string name="app_name">SQL</string>
+    <string name="userName">User Name</string>
+    <string name="password">Password</string>
+    <string name="rememberPass">Remember my password</string>
+    <string name="logIn">Log In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="logIn_page">Log In Page</string>
+    <string name="clearData">Clear Data</string>
+    <!-- E01 -->
+    <!-- E02 -->
+    <string name="logIn_page_custom">Custom Log In Page</string>
+    <string name="age">Age</string>
+
+    <!-- E02 -->
+
+
+    <!-- E04 -->
+    <string name="SQLite">SQLite Connector</string>
+    <string name="deleteFile">Delete File</string>
+    <string name="deleteAll">Delete All Data</string>
+    <string name="deleteMessage">Are you sure you want to permanently delete this Note? \n!</string>
+    <string name="delete_All_Message">Are you sure you want to permanently delete All Notes?</string>
+    <string name="positive">No</string>
+    <string name="negative">Yes</string>
+    <string name="editNote">Edit Note</string>
+    <string name="note">Note</string>
+    <string name="setting">Settings</string>
+    <string name="fonTitle">Font</string>
+    <string name="fontSize">Font Size</string>
+    <string name="fontSpacing">Font Spacing</string>
+    <string name="fontColor">Font Color</string>
+    <string name="autoBackCheckBox">Auto Back</string>
+    <string name="customColorCheckBox">Custom Color</string>
+    <string name="darkModeCheckBox">Dark Mode</string>
+    <string name="searchBox">Search</string>
+
+    <string-array name="font_spinner">
+        <item>Default Font</item>
+        <item>Deja</item>
+        <item>Segoe</item>
+        <item>Times</item>
+    </string-array>
+    <!-- E04 -->
+
+
+    <!-- E06 -->
+
+    <string name="ProductID">ProductID</string>
+    <string name="ProductName">ProductName</string>
+    <string name="SupplierID">SupplierID</string>
+    <string name="CategoryID">CategoryID</string>
+    <string name="Unit">Unit</string>
+    <string name="Price">Price</string>
+
+    <!-- E06 -->
+
+    <!-- E09 -->
+    <string-array name="finalActivity">
+        <item>E01_SharePreferences</item>
+        <item>E02_CustomSharedPreferences</item>
+        <item>E04_SQLite</item>
+        <item>E05_SQLite</item>
+        <item>E06_SQLiteTable</item>
+        <item>E07_SQLite</item>
+        <item>E08_SQLiteUnion</item>
+    </string-array>
+    <!-- E09 -->
+
+
+    <string name="lipsom">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean feugiat non risus sit amet venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc id sollicitudin lacus. In elit lectus, aliquet posuere imperdiet ut, faucibus et mauris. Mauris eget imperdiet ligula. Maecenas elementum dui vitae quam tincidunt, nec vehicula lectus auctor. Suspendisse vel neque in metus semper commodo. Praesent nec augue euismod, scelerisque massa sit amet, efficitur risus. Sed ac convallis nibh. Vestibulum et felis massa. Aliquam lectus mauris, dignissim eu ultrices sit amet, efficitur quis sapien. Sed ultrices dignissim purus, varius pellentesque risus feugiat quis. In lobortis pharetra eleifend. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam et pharetra libero.</string>
+</resources>
